@@ -1,0 +1,50 @@
+div.newsTicker .rssdescription{ /*shared class for all description elements in an RSS feed*/
+    display: none;
+}
+
+div.newsTicker div.rssTicker{
+	width: 460px;
+	line-height: 19px;
+	float: left;
+	position:relative;
+  	left:0;
+	height: 19px;
+	border-left: 0;
+	filter:progid:DXImageTransform.Microsoft.alpha(opacity=100); /*Specify fade effect in IE. Remove if desired.*/
+	-moz-opacity: 1; /*Specify fade effect in Firefox. Remove if desired.*/
+}
+
+div.newsTicker .rsstitle {
+	float: left;
+	width: 400px;
+	height: 19px;
+	overflow: hidden;
+	position: relative;
+ 	left: 0px;
+	top: 0px;
+	font-size: 11px;
+	line-height: 19px;
+	font-weight: normal;
+}
+
+div.newsTicker .rsstitle a {
+	color: #1f1f1f;
+}
+
+div.newsTicker .rsstitle a:hover {
+	text-decoration: none;
+	color: #f86a00;
+}
+
+div.newsTicker .rssdate{
+	float: left;
+	font-size: 11px;
+	overflow:hidden;
+	width: auto;
+	height:19px;
+	font-weight: normal;
+	position: relative;
+	top: 0;
+	left: 0;
+	color: #1f1f1f;
+}

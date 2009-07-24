@@ -1,0 +1,69 @@
+@import url("/content/files/public/style/style.css");
+
+/* For your IE's only */
+
+.productNavigation li a{+
+float: left;
+}
+
+.leftColumn{
+margin-left: 13px !important;
+}
+
+div.bubbleTop{
+overflow: hidden;
+}
+
+div.bubbleBottom{
+overflow: hidden;
+height: 8px !important;
+background-position: top right !important;
+margin-right: 2px;
+}
+
+div.bubbleBottom div.bubbleBottomLeft{
+float: left;
+margin-left: 1px;
+}
+
+
+img.banner{
+position: relative;
+z-index: 1;
+}
+
+.right{
+margin-left: 15px;
+}
+
+.left{
+margin-left: 12px !important;
+}
+
+#banner object{
+position: relative;
+}
+
+#login{
+background-position: 0 0 !important;
+}
+
+.login{
+position: absolute;
+}
+
+html* .flags{
+top: 59px !important;
+}
+*html div#middle div.top div#banner img{
+margin-top: -16px !important;
+}
+
+a#openTab, 
+a#closeTab{
+filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='/content/files/public/style/images/buttons/login-tab.png',sizingMethod='scale');
+}
+
+a#closeTab {
+filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='/content/files/public/style/images/buttons/close-tab.png',sizingMethod='scale');
+}
