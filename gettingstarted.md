@@ -12,6 +12,8 @@ coming....
 
 FROM SOURCE:
 
+The main development site for the idega platform is [here](http://github.com/idega) on Github where all the submodules available for the idega plaform are hosted and located.
+
 **Make sure the following are installed:**
 
  * [Java 5 SDK](http://java.sun.com)
