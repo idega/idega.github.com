@@ -23,6 +23,9 @@ The main development site for the idega platform is [here](http://github.com/ide
 Checkout the main (platform) project from github:
 
 	git clone git://github.com/idega/com.idega.block.platform.git
+	cd com.idega.block.platform
+	git submodule init
+	git submodule update
 	
 Add the idega maven repository to your settings.xml (under ~/.m2)
 
