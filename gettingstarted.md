@@ -6,11 +6,11 @@ layout: default
 Getting started
 ---------------
 
-FROM BINARY PACKAGES:
+**FROM BINARY PACKAGES:**
 
 coming....
 
-FROM SOURCE:
+**FROM SOURCE:**
 
 The main development site for the idega platform is [here](http://github.com/idega) on Github where all the submodules available for the idega plaform are hosted and located.
 
