@@ -57,6 +57,7 @@ Add the idega maven repository to your settings.xml (under ~/.m2)
 	  </activeProfiles>
 	</settings>
 
+
 Build all modules with maven:
 
 	cd com.idega.block.platform

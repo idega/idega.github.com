@@ -32,3 +32,8 @@ Getting Started
 
 To get started go [here](gettingstarted.html)
 
+
+Features and Components
+--------------
+
+To see an overview of the platforms main features and components go [here](components.html)
