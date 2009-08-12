@@ -29,8 +29,8 @@ idega is used for:
  * Tender process handling
  * And much more...
 
-What makes idega special its flexibility because of it's modular structure and today there exist over 200+ modules ranging from general functionality to highly specific.
-This is why idega can be easily customized for different types of web applications and therefore all of the above mentioned different vertical solutions can be assembled on top of the idega base system.
+What makes idega special is its flexibility because of it's modular structure and today there exist over 200+ modules ranging from general functionality to highly specific.
+This is why idega can easily be customized for different types of web applications and therefore all of the above mentioned different vertical solutions can be assembled on top of the idega base system.
 
 Getting Started
 --------------
