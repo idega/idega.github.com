@@ -132,7 +132,7 @@ If you run under the "/" (ROOT) context you will first need to remove the Tomcat
 
 It is recommended to set Java options to increase the default memory allocation by setting the CATALINA_OPTS variable in your bin/startup.sh or bin/startup.bat like e.g.:
 
-export CATALINA_OPTS="-Xmx256M -XX:MaxPermSize=128M -Dfile.encoding=UTF-8 -Djava.awt.headless=true -XX:+HeapDumpOnOutOfMemoryError -XX:MinHeapFreeRatio=20 -XX:MaxHeapFreeRatio=40"
+	export CATALINA_OPTS="-Xmx256M -XX:MaxPermSize=128M -Dfile.encoding=UTF-8 -Djava.awt.headless=true -XX:+HeapDumpOnOutOfMemoryError -XX:MinHeapFreeRatio=20 -XX:MaxHeapFreeRatio=40"
 
 Now start the Tomcat with bin/startup.sh or bin/startup.bat
 
