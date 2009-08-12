@@ -50,7 +50,7 @@
   <div id="container">
     <div id="top">
       <div class="marginHandler">
-        <a href="http://www.idega.is/" id="logo" name="logo"><img alt="idega software"
+        <a href="http://www.idega.com/" id="logo" name="logo"><img alt="idega software"
         src="idega_files/idega-white.png" /></a> <!--div class="flags">
             <a tip="TungumÃ¡l: Ãslenska" href="http://idega.is/pages/fyrirtaekid/starfsmenn/?iw_language=is">
               <img alt="TungumÃ¡l: Ãslenska" src="idega_files/orb_is.png">
@@ -59,20 +59,12 @@
               <img alt="Language: English" src="idega_files/orb_en.png">
             </a>
           </div-->
-         <!--ul>
-<li class="odd firstChild"><a href="http://idega.is/pages/" class="link"><span>ForsÃ­Ã°a</span>
-</a></li>
-<li class="even"><a href="http://idega.is/pages/vorur/" class="link"><span>VÃ¶rur</span>
-</a></li>
-<li class="odd"><a href="http://idega.is/pages/vidskiptavinir/" class="link"><span>ViÃ°skiptavinir</span>
-</a></li>
-<li class="even beforeSelected"><a href="http://idega.is/pages/samstarfsadilar/" class="link"><span>SamstarfsaÃ°ilar</span>
-</a></li>
-<li class="selected odd"><a href="http://idega.is/pages/fyrirtaekid/" class="link"><span>FyrirtÃ¦kiÃ°</span>
-</a></li>
-<li class="even afterSelected lastChild"><a href="http://idega.is/pages/frettir/" class="link"><span>FrÃ©ttir</span>
-</a></li>
-</ul-->
+<ul>
+	<li class="odd firstChild"><a href="http://idega.com/" class="link"><span>Idega Software</span>
+	</a></li>
+	<li class="even selected lastChild"><a href="http://www.idega.org/" class="link"><span>Open Source</span>
+	</a></li>
+</ul>
         <!--0 ms-->
       </div>
     </div>
@@ -139,15 +131,15 @@
           <div class="right">
            <h2 id='getting_started'>Getting started</h2>
 
-<p><strong>FROM BINARY PACKAGES:</strong></p>
+<p><strong>DOWNLOADING BINARY PACKAGES:</strong></p>
 
 <p>coming&#8230;.</p>
 
-<p><strong>FROM SOURCE:</strong></p>
+<p><strong>BUILDING FROM SOURCE (FROM HEAD):</strong></p>
 
 <p>The main development site for the idega platform is <a href='http://github.com/idega'>here</a> on Github where all the submodules available for the idega plaform are hosted and located.</p>
 
-<p><strong>Make sure the following are installed:</strong></p>
+<p><strong>Make sure the following are installed for building and compiling:</strong></p>
 
 <ul>
 <li><a href='http://java.sun.com'>Java 5 SDK</a></li>
@@ -157,9 +149,28 @@
 <li><a href='http://www.git-scm.org'>Git</a></li>
 </ul>
 
-<p>Checkout the main (platform) project from github:</p>
+<p>For running you will need a Java EE Servet container and a an SQL database.</p>
 
-<pre><code>git clone git://github.com/idega/com.idega.block.platform.git</code></pre>
+<p><strong>Tomcat and MySQL are recommended:</strong></p>
+
+<ul>
+<li><a href='http://tomcat.apache.org'>Tomcat 6.x</a></li>
+
+<li><a href='http://www.mysql.org'>MySQL 5.1.x</a></li>
+</ul>
+
+<p>It is also possible to run with an embedded Java database such as hsqldb:</p>
+
+<ul>
+<li><a href='http://www.hsqldb.org'>HSQL 1.8.x</a></li>
+</ul>
+
+<p>Now Checkout the main (platform) project from github:</p>
+
+<pre><code>git clone git://github.com/idega/com.idega.block.platform.git
+cd com.idega.block.platform
+git submodule init
+git submodule update</code></pre>
 
 <p>Add the idega maven repository to your settings.xml (under ~/.m2)</p>
 
@@ -199,7 +210,64 @@
 <p>Build all modules with maven:</p>
 
 <pre><code>cd com.idega.block.platform
-mvn clean install</code></pre>  
+mvn clean install</code></pre>
+
+<p>Do the same with the addon and egov modules</p>
+
+<pre><code>git clone git://github.com/idega/com.idega.block.addon.git
+cd com.idega.block.addon
+git submodule init
+git submodule update
+mvn clean install</code></pre>
+
+<p>and:</p>
+
+<pre><code>git clone git://github.com/idega/com.idega.block.egov.git
+cd com.idega.block.egov
+git submodule init
+git submodule update
+mvn clean install</code></pre>
+
+<p>Now checkout the main idega webapp:</p>
+
+<pre><code>git clone git://github.com/idega/idega-webapp-base.git
+cd idega-webapp-base
+mvn clean package install</code></pre>
+
+<p>Now under the target you have a ready built Java webapp or WAR archive</p>
+
+<p>Deploy the webapp into your tomcat installation e.g. by directing tomcat to it with a context file.</p>
+
+<p>Create a file in your Tomcat installation under conf/Catalina/localhost named ROOT.xml:</p>
+
+<pre><code>&lt;Context path=&quot;&quot; docBase=&quot;[WEBAPP_FOLDER]/target/idega-base-webapp-4.1.3-SNAPSHOT&quot; reloadable=&quot;false&quot; debug=&quot;0&quot; swallowOutput=&quot;true&quot; liveDeploy=&quot;false&quot;&gt;
+
+&lt;Resource name=&quot;jdbc/DefaultDS&quot; type=&quot;javax.sql.DataSource&quot;
+        url=&quot;jdbc:mysql://localhost/[DATABASENAME]?autoReconnect=true&quot;
+        driverClassName=&quot;com.mysql.jdbc.Driver&quot;
+        username=&quot;[DBUSER]&quot;
+        password=&quot;[DBPASSWORD]&quot;
+        maxActive=&quot;20&quot;
+        maxIdle=&quot;5&quot;
+        maxWait=&quot;10000&quot;
+        removeAbandoned=&quot;true&quot;
+        removeAbandonedTimeout=&quot;300&quot;
+        logAbandoned=&quot;true&quot;
+        testOnBorrow=&quot;true&quot;
+        validationQuery=&quot;SELECT 1&quot;
+  /&gt;
+
+&lt;/Context&gt;</code></pre>
+
+<p>If you run under the &#8221;/&#8221; (ROOT) context you will first need to remove the Tomcat default ROOT webapplication under webapps folder, and you will ned to create and specify the database that you point the system to and install a JDBC library jar file (in the tomcat&#8217;s lib folder). The JDBC library for MySQL can be downloaded from Mysql <a href='http://dev.mysql.com/downloads/connector/c/6.0.html'>here</a>.</p>
+
+<p>It is recommended to set Java options to increase the default memory allocation by setting the CATALINA_OPTS variable in your bin/startup.sh or bin/startup.bat like e.g.:</p>
+
+<pre><code>export CATALINA_OPTS=&quot;-Xmx256M -XX:MaxPermSize=128M -Dfile.encoding=UTF-8 -Djava.awt.headless=true -XX:+HeapDumpOnOutOfMemoryError -XX:MinHeapFreeRatio=20 -XX:MaxHeapFreeRatio=40&quot;</code></pre>
+
+<p>Now start the Tomcat with bin/startup.sh or bin/startup.bat</p>
+
+<p>If everything went successfully you whould now have a running webapplication on <a href='http://localhost:8080'>http://localhost:8080</a>. The default login is Administrator/idega.</p>  
 	</div>
         </div>
       </div>

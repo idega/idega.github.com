@@ -3,15 +3,15 @@ title: Components
 layout: default
 ---
 
-Main Components of the platform
--------------------------------
-
-These are the main components included in the platform:
-
-Form Builder
+Main Components
 ------------
 
- * Web 2.0 XForms builder
+These are the main components included in the base platform:
+
+[Form Builder](formbuilder.html)
+------------
+
+ * Web 2.0 [XForms](http://www.w3.org/MarkUp/Forms/) builder based on [Chiba](http://www.chiba-project.org)
  * Style-able and interactive
  * Saveable forms
  * Plug-able
@@ -21,10 +21,10 @@ Form Builder
  * Versioning and Live Update
 
 
-Portal Designer and CMS/DMS
+[Portal Designer and CMS/DMS](portal.html)
 -----------------------
 
- * Web 2.0 Portal Builder
+ * Web 2.0 Portal Builder based on [Java Server Faces](http://java.sun.com/javaee/javaserverfaces/)
  * Theme-able
  * User, Group management
  * Advanced security controls
@@ -33,7 +33,7 @@ Portal Designer and CMS/DMS
  * Completely Localizable
  * Remote drive access (WebDAV)
 
-BPM Engine and Task system
+[BPM Engine and Task system](process.html)
 --------------------------
 
  * BPM Engine based on [JBoss JBPM](http://www.jbpm.org)
@@ -44,8 +44,8 @@ BPM Engine and Task system
  * Versioned processes
  * Hot-Updateable
 
-Interactive Case Log/Registry
------------------------------
+[Interactive Case Log/Registry](case.html)
+-------------------------------
 
  * Complete overview of running processes and cases
  * Unified interface for tasks, documents, emails, messages and relevant contacts of cases

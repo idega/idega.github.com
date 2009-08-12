@@ -3,13 +3,16 @@ title: Home
 layout: default
 ---
 
+<a style="float:right;" href="images/idega_i_glossy_512.png"><img src="images/idega_i_glossy_64_drop.png"/></a>
 
 Welcome to idega open source platform!
 --------------------------------------
 
-The idega pltatform is a modular web applaction platform based on Java
+The idega platform is a modular web applaction platform based on Java
 
 idega is used for:
+
+<a style="float:right" href="images/login.png"><img src="images/login-sm.png"/></a>
 
  * eGovernment
  * Portals
@@ -26,8 +29,8 @@ idega is used for:
  * Tender process handling
  * And much more...
 
-What makes idega special is that it is flexible because of it's modular structure and today exist over 200+ modules ranging from general functionality to highly specific.
-This is why idega can be easily customized for different types of web applications and therefore all of these different vertical solutions can be assembled on top of the idega base system.
+What makes idega special its flexibility because of it's modular structure and today there exist over 200+ modules ranging from general functionality to highly specific.
+This is why idega can be easily customized for different types of web applications and therefore all of the above mentioned different vertical solutions can be assembled on top of the idega base system.
 
 Getting Started
 --------------
