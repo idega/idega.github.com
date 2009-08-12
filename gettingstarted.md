@@ -136,4 +136,5 @@ It is recommended to set Java options to increase the default memory allocation 
 
 Now start the Tomcat with bin/startup.sh or bin/startup.bat
 
-If everything went successfully you whould now have a running webapplication on (http://localhost:8080)[http://localhost:8080]. The default login is Administrator/idega.
+If everything went successfully you whould now have a running webapplication on [http://localhost:8080](http://localhost:8080).
+The default login is Administrator/idega.
