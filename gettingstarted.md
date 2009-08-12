@@ -29,7 +29,7 @@ For running you will need a Java EE Servet container and a an SQL database.
  
 It is also possible to run with an embedded Java database such as hsqldb:
 
- * [MySQL 5.1.x](http://www.mysql.org)
+ * [HSQL 1.8.x](http://www.hsqldb.org)
 
 Now Checkout the main (platform) project from github:
 
