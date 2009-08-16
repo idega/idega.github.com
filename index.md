@@ -3,7 +3,7 @@ title: Home
 layout: default
 ---
 
-<a style="float:right;" href="images/idega_i_glossy_512.png"><img src="images/idega_i_glossy_64_drop.png"/></a>
+<a style="float:right;" href="images/idega_i_glossy_512.png"><img src="images/idega_i_glossy_64.png"/></a>
 
 Welcome to idega open source platform!
 --------------------------------------
