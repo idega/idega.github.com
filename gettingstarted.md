@@ -37,7 +37,7 @@ Now Checkout the main (platform) project from github:
 	cd com.idega.block.platform
 	git submodule init
 	git submodule update
-	git submodule foreach checkout master
+	git submodule foreach git checkout master
 	git submodule foreach git pull
 	
 Add the idega maven repository to your settings.xml (under ~/.m2)
@@ -88,8 +88,8 @@ Do the same with the addon and egov modules
 	cd com.idega.block.addon
 	git submodule init
 	git submodule update
-        git submodule foreach checkout master
-        git submodule foreach git pull
+	git submodule foreach git checkout master
+	git submodule foreach git pull
 	mvn clean install
 	
 and:
@@ -98,8 +98,8 @@ and:
 	cd com.idega.block.egov
 	git submodule init
 	git submodule update
-        git submodule foreach checkout master
-        git submodule foreach git pull
+	git submodule foreach git checkout master
+	git submodule foreach git pull
 	mvn clean install
 	
 Now checkout the main idega webapp:
