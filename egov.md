@@ -11,7 +11,7 @@ The idega solutions have been extensively used for self-service and eGovernment 
 Municipalities
 --------------
 
-Several specialiced modules have been developed for municipal specialized processes such as for elementary school registration/choice, school meals, childcare homes, music schools, after-school care, seminars, property tax handling, car parking etc. In some cases this has been integrated with e-certificates for digital signatures of contracts. This is all integrated into the national/regional citizen registry and all cases are collected in a central case registry that is linked to each citizens' personal view in the portal.
+Several specialiced modules have been developed for municipal specialized processes such as for elementary school registration/choice, school meals, childcare homes, music schools, after-school care, seminars, property tax handling, car parking etc. In some cases this has been integrated with e-certificates for digital signatures of contracts. This is all integrated into the national/regional citizen registry and all cases are collected in a central case registry that is linked to each citizens personal view in the portal.
 
 The diagram illustrates how some of these modules are built on-top of the core idega platform
 
@@ -29,4 +29,4 @@ In version 4 of the idega platform it was augmented with a dynamic process engin
 
 <img src="images/process.png"/>
 
-These workflows are in turn linked to the Form Engine where typicall each task in the workflow corresponds to a form built in the Form Builder. These forms can just as well as the processes be dynamically changed whenever needed to meet new business needs.
+These workflows are in turn linked to the Form Engine where typically each user task in the workflow corresponds to a form built and customized in the Form Builder. These forms can just as well as the processes be dynamically changed whenever needed to meet new business needs.
