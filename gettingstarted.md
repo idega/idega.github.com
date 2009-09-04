@@ -8,9 +8,9 @@ Getting started
 
 **DOWNLOADING BINARY PACKAGES:**
 
-coming....
+Coming soon...
 
-**BUILDING FROM SOURCE (FROM HEAD):**
+**BUILDING FROM SOURCE - FROM HEAD/"Development branch":**
 
 The main development site for the idega platform is [here](http://github.com/idega) on Github where all the submodules available for the idega plaform are hosted and located.
 
@@ -22,7 +22,7 @@ The main development site for the idega platform is [here](http://github.com/ide
 
 For running you will need a Java EE Servet container and a an SQL database.
 
-**Tomcat and MySQL are recommended:** 
+**Tomcat and MySQL are recommended:**
 
  * [Tomcat 6.x](http://tomcat.apache.org) 
  * [MySQL 5.1.x](http://www.mysql.org)

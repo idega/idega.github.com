@@ -14,7 +14,7 @@ idega is used for:
 
 <a style="float:right" href="images/login.png"><img src="images/login-sm.png"/></a>
 
- * eGovernment
+ * [eGovernment](egov.html)
  * Portals
  * Sports Membership management
  * Sports tournament systems (Golf, Motor-Cross and Running)
@@ -30,7 +30,7 @@ idega is used for:
  * And much more...
 
 What makes idega special is its flexibility because of it's modular structure and today there exist over 200+ modules ranging from general functionality to highly specific.
-This is why idega can easily be customized for different types of web applications and therefore all of the above mentioned different vertical solutions can be assembled on top of the idega base system.
+This is why idega can easily be customized for different types of web applications and therefore all of the above mentioned different vertical solutions can be assembled on top of the idega base system. Read more [here](introduction.html).
 
 If you are a developer can check out the great collection of modules on our code repository on [github](http://github.com/idega). Most of the modules are [Maven 2](http://maven.apache.org) modules, but some of them are [Maven 1](http://maven.apache.org/maven-1.x/) or [OSGi](http://www.osgi.org)
 
@@ -38,7 +38,6 @@ Getting Started
 --------------
 
 To get started go [here](gettingstarted.html)
-
 
 Features and Components
 --------------
