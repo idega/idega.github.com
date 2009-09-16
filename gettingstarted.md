@@ -40,6 +40,17 @@ Now Checkout the main (platform) project from github:
 	git submodule foreach git checkout master
 	git submodule foreach git pull
 	
+One IMPORTANT note:
+The default checkout is for contributors (we may change that) so BEFORE git submodule init, open the file .gitmodules and change all : 
+
+	git@github.com:idega/...
+
+to the public clone url
+
+	git://github.com/idega/...
+
+This goes for all of the parent modules.
+
 Add the idega maven repository to your settings.xml (under ~/.m2)
 
 	<settings xmlns="http://maven.apache.org/SETTINGS/1.0.0"
