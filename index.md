@@ -8,7 +8,7 @@ layout: default
 Welcome to idega open source platform!
 --------------------------------------
 
-The idega platform is a modular web applaction platform based on Java
+The idega platform is a modular web application platform based on Java
 
 idega is used for:
 
