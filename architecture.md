@@ -46,7 +46,7 @@ Business Logic Layer
 Peristence Layer
 ================
 
-* **JPA** - Hibernate is integrated as the default persistence Object-to-Relational-Mapping engine and the recommended way of writing persisntent objects is to be compliant with the Java Persistence API standard. The JPA standard makes it possible to develop complex persistent objects with regular "POJO" style Java classes with annotations.
+* **JPA** - Hibernate is integrated as the default persistence Object-to-Relational-Mapping engine and the recommended way of writing persistent objects is to be compliant with the Java Persistence API standard. The JPA standard makes it possible to develop complex persistent objects with regular "POJO" style Java classes with annotations.
 
 * **IDO** - Idega Data Objects is the older style of developing persistent java classes and is a simplified form of the EJB "Bean Managed Persistence" architectcture.
 
