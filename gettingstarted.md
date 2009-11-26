@@ -15,8 +15,9 @@ The idega platform comes with a double-clickable GUI application for easy evalut
 Download for:
 
 * [Mac OS X Leopard/Snow Leopard](http://repository.idega.com/maven2/com/idega/app/com.idega.app.eplatform.mac/4.1.3-SNAPSHOT/com.idega.app.eplatform.mac-4.1.3-20091126.121456-1.dmg)
-* [Windows XP/Vista/7](http://repository.idega.com/maven2/com/idega/app/com.idega.app.eplatform.win32/4.1.3-SNAPSHOT/com.idega.app.eplatform.win32-4.1.3-20091126.120754-3.zip)
+* [Windows XP/Vista/7](http://repository.idega.com/maven2/com/idega/app/com.idega.app.eplatform.win32/4.1.3-SNAPSHOT/com.idega.app.eplatform.win32-4.1.3-20091126.212618-4.zip)
 
+The initial user login is Administrator/idega
 
 **BUILDING FROM SOURCE - FROM HEAD/"Development branch":**
 
