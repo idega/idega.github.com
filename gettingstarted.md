@@ -24,7 +24,7 @@ The main development site for the idega platform is [here](http://github.com/ide
 
 **Make sure the following are installed for building and compiling:**
 
- * [Java 5 SDK](http://java.sun.com)
+ * [Java 5/6/7 SDK](http://java.sun.com)
  * [Apache Maven 2.x] (http://maven.apache.org)
  * [Git](http://www.git-scm.org)
 
