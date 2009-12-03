@@ -19,6 +19,13 @@ Download for:
 
 The initial user login is Administrator/idega
 
+The idega platform supports the [RapidWeaver](http://www.realmacsoftware.com/rapidweaver/) theme format packaged as a zip).
+To get started with a portal layout it is easiest to upload a theme (Under The Lucid/Themes option under the Workspace UI).
+
+Here is a simple theme you can download to get started: 
+
+<a href="http://repository.idega.com/maven2/com/idega/theme/eGov.rwtheme/4.1.3/eGov.rwtheme-4.1.3.zip"><img style="width: 128px;" src="images/egovthemeicon.png"/></a>
+
 **BUILDING FROM SOURCE - FROM HEAD/"Development branch":**
 
 The main development site for the idega platform is [here](http://github.com/idega) on Github where all the submodules available for the idega plaform are hosted and located.
