@@ -19,7 +19,7 @@ Download for:
 
 The initial user login is Administrator/idega
 
-The idega platform supports the [RapidWeaver](http://www.realmacsoftware.com/rapidweaver/) theme format packaged as a zip).
+The idega platform supports the [RapidWeaver](http://www.realmacsoftware.com/rapidweaver/) theme format (packaged as a zip).
 To get started with a portal layout it is easiest to upload a theme (Under The Lucid/Themes option under the Workspace UI).
 
 Here is a simple theme you can download to get started: 
