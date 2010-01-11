@@ -62,6 +62,11 @@ git@github.com:idega/...
 to the public clone url
 git://github.com/idega/...
 This goes for all of the parent modules.
+You may have to issue a:
+
+	git submodule sync
+
+if you did any of the git submodule commands before changing the .gitmodules file
 
 Add the idega maven repository to your settings.xml (under ~/.m2)
 
