@@ -129,6 +129,11 @@ and:
 	git submodule foreach git checkout master
 	git submodule foreach git pull
 	mvn clean install
+
+Checkout the Idega's Maven plugin to build WAR file:
+	git clone git@github.com:idega/com.idega.maven.webapp.git
+	cd com.idega.maven.webapp
+	mvn clean install
 	
 Now checkout the main idega webapp:
 
