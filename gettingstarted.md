@@ -132,7 +132,7 @@ and:
 
 Checkout the Idega's Maven plugin to build WAR file:
 
-	git clone git@github.com:idega/com.idega.maven.webapp.git
+	git clone git://github.com:idega/com.idega.maven.webapp.git
 	cd com.idega.maven.webapp
 	mvn clean install
 	
