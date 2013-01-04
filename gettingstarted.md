@@ -28,7 +28,7 @@ Here is a simple theme you can download to get started:
 
 **BUILDING FROM SOURCE - FROM HEAD/"Development branch":**
 
-The main development site for the idega platform is [here](http://github.com/idega) on Github where all the submodules available for the idega plaform are hosted and located.
+The main development site for the idega platform is [here](http://github.com/idega) on Github where all the submodules available for the idega plaform are hosted and located. You need to use your [GitHub](https://github.com/) account in order to download the code.
 
 **Make sure the following are installed for building and compiling:**
 
