@@ -24,7 +24,7 @@ To get started with a portal layout it is easiest to upload a theme (Under The L
 
 Here is a simple theme you can download to get started: 
 
-<a href="http://repository.idega.com/maven2/com/idega/theme/eGov.rwtheme/4.1.3/eGov.rwtheme-4.1.3.zip"><img style="width: 128px;" src="images/egovthemeicon.png"/></a>
+<a href="https://github.com/idega/eGov.rwtheme/blob/master/src/eGov.rwtheme.zip?raw=true"><img style="width: 128px;" src="images/egovthemeicon.png"/></a>
 
 **BUILDING FROM SOURCE - FROM HEAD/"Development branch":**
 
