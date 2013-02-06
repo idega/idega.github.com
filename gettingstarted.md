@@ -6,19 +6,7 @@ layout: default
 Getting started
 ---------------
 
-**DOWNLOADING PRE-BUILT BINARY WAR FILE AND CONFIGURED TOMCAT 6.0.35 :**
-
-Download [here](https://www.dropbox.com/sh/xd1qtvsxwwkzqo8/jG40LwxrqF)
-<!--
-The Idega's ePlatform comes with a double-clickable GUI application for easy evalutation and testing of the solution. The application runs an embedded web, application and database server.
-
-<img style="width: 350px;" src="images/idegaapp.png"/>
-
-Download for:
-
-* [Mac OS X Leopard/Snow Leopard](http://repository.idega.com/maven2/com/idega/app/com.idega.app.eplatform.mac/4.1.3-SNAPSHOT/com.idega.app.eplatform.mac-4.1.3-20091126.121456-1.dmg)
-* [Windows XP/Vista/7](http://repository.idega.com/maven2/com/idega/app/com.idega.app.eplatform.win32/4.1.3-SNAPSHOT/com.idega.app.eplatform.win32-4.1.3-20091126.212618-4.zip)
--->
+**[DOWNLOAD](https://www.dropbox.com/sh/xd1qtvsxwwkzqo8/jG40LwxrqF) PRE-BUILT BINARY WAR FILE AND CONFIGURED TOMCAT 6.0.35**
 
 The initial user login is Administrator/idega
 
