@@ -159,7 +159,7 @@ Create a file in your Tomcat installation under conf/Catalina/localhost named RO
 	</Context>
 
 
-If you run under the "/" (ROOT) context you will first need to remove the Tomcat default ROOT webapplication under webapps folder, and you will ned to create and specify the database that you point the system to and install a JDBC library jar file (in the tomcat's lib folder). The JDBC library for MySQL can be downloaded from Mysql [here](http://dev.mysql.com/downloads/connector/c/6.0.html).
+If you run under the "/" (ROOT) context you will first need to remove the Tomcat default ROOT webapplication under webapps folder, and you will ned to create and specify the database that you point the system to and install a JDBC library jar file (in the tomcat's lib folder). The JDBC library for MySQL can be downloaded from Mysql [here](http://dev.mysql.com/downloads/connector/j/).
 
 It is recommended to set Java options to increase the default memory allocation by setting the CATALINA_OPTS variable in your bin/startup.sh or bin/startup.bat like e.g.:
 
