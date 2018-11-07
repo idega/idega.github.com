@@ -30,7 +30,7 @@ For running you will need a Java EE Servet container and a an SQL database.
 **Tomcat and MySQL are recommended:**
 
  * [Tomcat 7.x](https://tomcat.apache.org) 
- * [MySQL 5.7.x](https://www.mysql.com). Make sure lower and upper cases are enabled for tables names in MySQL config(https://dba.stackexchange.com/questions/59407/how-to-make-mysql-table-name-case-insensitive-in-ubuntu).
+ * [MySQL 5.7.x](https://www.mysql.com). Make sure lower and upper cases are enabled for tables names in MySQL [config](https://dba.stackexchange.com/questions/59407/how-to-make-mysql-table-name-case-insensitive-in-ubuntu).
 
 Now Checkout the main (platform) project from github:
 
