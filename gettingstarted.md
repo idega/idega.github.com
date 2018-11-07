@@ -6,8 +6,6 @@ layout: default
 Getting started
 ---------------
 
-**[DOWNLOAD](https://www.dropbox.com/sh/xd1qtvsxwwkzqo8/jG40LwxrqF) PRE-BUILT BINARY WAR FILE AND CONFIGURED TOMCAT 6.0.35**
-
 The initial user login is Administrator/idega
 
 The idega platform supports the [RapidWeaver](http://www.realmacsoftware.com/rapidweaver/) theme format (packaged as a zip).
@@ -23,41 +21,26 @@ The main development site for the idega platform is [here](http://github.com/ide
 
 **Make sure the following are installed for building and compiling:**
 
- * [Java 5/6/7 SDK](http://java.sun.com)
- * [Apache Maven 2.x] (http://maven.apache.org)
+ * [Java 8 JDK](https://www.java.com/en/download/)
+ * [Apache Maven 3.x](https://maven.apache.org/download.cgi)
  * [Git](http://www.git-scm.org)
 
 For running you will need a Java EE Servet container and a an SQL database.
 
 **Tomcat and MySQL are recommended:**
 
- * [Tomcat 6.x](http://tomcat.apache.org) 
- * [MySQL 5.1.x](http://www.mysql.org)
- 
-It is also possible to run with an embedded Java database such as hsqldb:
-
- * [HSQL 1.8.x](http://www.hsqldb.org)
+ * [Tomcat 7.x](https://tomcat.apache.org) 
+ * [MySQL 5.7.x](https://www.mysql.com)
 
 Now Checkout the main (platform) project from github:
 
 	git clone git://github.com/idega/com.idega.block.platform.git
 	cd com.idega.block.platform
+	git checkout BRANCH_PLATFORM_5
 	git submodule init
 	git submodule update
-	git submodule foreach git checkout master
+	git submodule foreach git checkout BRANCH_PLATFORM_5
 	git submodule foreach git pull
-
-One IMPORTANT note:
-The default checkout is for contributors (we may change that) so BEFORE git submodule init, open the file .gitmodules and change all : 
-git@github.com:idega/...
-to the public clone url
-git://github.com/idega/...
-This goes for all of the parent modules.
-You may have to issue a:
-
-	git submodule sync
-
-if you did any of the git submodule commands before changing the .gitmodules file
 
 Add the idega maven repository to your settings.xml (under ~/.m2)
 
@@ -105,9 +88,10 @@ Do the same with the addon and egov modules
 
 	git clone git://github.com/idega/com.idega.block.addon.git
 	cd com.idega.block.addon
+	git checkout BRANCH_PLATFORM_5
 	git submodule init
 	git submodule update
-	git submodule foreach git checkout master
+	git submodule foreach git checkout BRANCH_PLATFORM_5
 	git submodule foreach git pull
 	mvn clean install
 	
@@ -115,9 +99,10 @@ and:
 
 	git clone git://github.com/idega/com.idega.block.egov.git
 	cd com.idega.block.egov
+	git checkout BRANCH_PLATFORM_5
 	git submodule init
 	git submodule update
-	git submodule foreach git checkout master
+	git submodule foreach git checkout BRANCH_PLATFORM_5
 	git submodule foreach git pull
 	mvn clean install
 
@@ -125,21 +110,23 @@ Checkout the Idega's Maven plugin to build WAR file:
 
 	git clone git://github.com:idega/com.idega.maven.webapp.git
 	cd com.idega.maven.webapp
+	git checkout BRANCH_PLATFORM_5
 	mvn clean install
 	
 Now checkout the main idega webapp:
 
 	git clone git://github.com/idega/idega-webapp-base.git
 	cd idega-webapp-base
+	git checkout BRANCH_PLATFORM_5
 	mvn clean package install
 	
 Now under the target you have a ready built Java webapp or WAR archive
 
-Deploy the webapp into your tomcat installation e.g. by directing tomcat to it with a context file.
+Deploy the webapp into your Tomcat installation e.g. by directing tomcat to it with a context file.
 
 Create a file in your Tomcat installation under conf/Catalina/localhost named ROOT.xml:
 
-	<Context path="" docBase="[WEBAPP_FOLDER]/target/idega-base-webapp-4.1.3-SNAPSHOT" reloadable="false" debug="0" swallowOutput="true" liveDeploy="false">
+	<Context path="" docBase="[WEBAPP_FOLDER]/target/idega-base-webapp-5.0.0-SNAPSHOT" reloadable="false" debug="0" swallowOutput="true" liveDeploy="false">
 	
 	<Resource name="jdbc/DefaultDS" type="javax.sql.DataSource"
 	        url="jdbc:mysql://localhost/[DATABASENAME]?autoReconnect=true"
@@ -163,7 +150,7 @@ If you run under the "/" (ROOT) context you will first need to remove the Tomcat
 
 It is recommended to set Java options to increase the default memory allocation by setting the CATALINA_OPTS variable in your bin/startup.sh or bin/startup.bat like e.g.:
 
-	export CATALINA_OPTS="-Xmx256M -XX:MaxPermSize=128M -Dfile.encoding=UTF-8 -Djava.awt.headless=true -XX:+HeapDumpOnOutOfMemoryError -XX:MinHeapFreeRatio=20 -XX:MaxHeapFreeRatio=40"
+	export CATALINA_OPTS="-Xmx1g -XX:MaxPermSize=512m -Dfile.encoding=UTF-8 -Djava.awt.headless=true -XX:+HeapDumpOnOutOfMemoryError -XX:MinHeapFreeRatio=20 -XX:MaxHeapFreeRatio=40"
 
 Now start the Tomcat with bin/startup.sh or bin/startup.bat
 
